@@ -28,5 +28,5 @@ RUN ["/bin/bash", "-c", "pip install --no-cache-dir mmcv-full -f https://downloa
 RUN git clone https://github.com/dsowrd/cbnu_hrnet-ocr.git /cbnu
 WORKDIR /cbnu
 ENV FORCE_CUDA="1"
-RUN pip install -r requirements.txt
-RUN pip install --no-cache-dir -e .
+RUN pip install -r mmsegmentation/requirements.txt
+RUN pip install --no-cache-dir -e mmsegmentation/.
